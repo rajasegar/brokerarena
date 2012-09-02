@@ -1,0 +1,14 @@
+/* style.css 
+ * Custom style sheet for BrokerArena admin
+ * Author: Rajasegar Chandran
+ * URL: http://hangaroundtheweb.com
+*/
+
+body {
+	padding-top:60px; /* Padding for the fixed navigation menu */
+};
+			
+.tab-content {
+	display:table;
+	width:0; /* to solve the issue with tabbable tabs-left */
+	}

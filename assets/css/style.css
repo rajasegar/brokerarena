@@ -1,0 +1,291 @@
+/* Custom stylesheet for Brokerarena.com
+ * Author: Rajasegar Chandran
+ * Website: http://hangaroundthewbe.com
+ */
+ 
+:focus { outline: 0 }
+a:active, a:focus {
+outline: 0
+}
+
+/*-------LOGIN STARTS HERE -------*/
+
+/* Login Container (default to float:right) */
+#loginContainer {
+    position:relative;
+    float:right;
+    font-size:11px;
+}
+
+/* Login Button */
+#loginButton { 
+    display:inline-block;
+    float:right;
+    background:#d2e0ea url(images/buttonbg.png) repeat-x; 
+    border-radius:3px;
+    -moz-border-radius:3px;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+	
+}
+
+/* Login Button Text */
+#loginButton span {
+    color:#445058; 
+    font-size:11px; 
+    font-weight:bold; 
+    text-shadow:1px 1px #fff; 
+    padding:5px 29px 5px 10px;
+    background:url(images/loginArrow.png) no-repeat 50px 3px;
+    display:block
+}
+
+#loginButton:hover {
+    background:url(images/buttonbgHover.png) repeat-x;
+}
+
+/* Login Box */
+#loginBox {
+    position:absolute;
+    /*top:34px;*/
+	top:24px;
+    right:0;
+    display:none;
+    z-index:29;
+}
+
+#loginBox #logintabs {
+	width:248px; 
+    border-radius:3px 0 3px 3px;
+    -moz-border-radius:3px 0 3px 3px;
+    margin-top:-1px;
+    background:#d2e0ea;
+    padding:5px;
+	color:#1B325F;
+	border:0;
+}
+#loginBox #logintabs  ul {
+	background:none;
+	border:0;
+}
+#loginBox #logintabs  ul li {
+	margin:0;
+}
+
+#loginBox #logintabs #tabUserLogin ,
+#loginBox #logintabs #tabBrokerLogin {
+	padding:0;
+}
+
+/* If the Login Button has been clicked */    
+#loginButton.active {
+    border-radius:3px 3px 0 0;
+}
+
+#loginButton.active span {
+    background-position:50px -80px;
+}
+
+/* A Line added to overlap the border */
+#loginButton.active em {
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#d2e0ea;
+    bottom:-1px;
+	right:0;
+}
+
+/* Login Form */
+#loginForm {
+    /*width:248px; 
+    border-radius:3px 0 3px 3px;
+    -moz-border-radius:3px 0 3px 3px;
+    margin-top:-1px;
+    background:#d2e0ea;
+    padding:5px;
+	color:#1B325F;*/
+}
+
+.loginForm fieldset {
+    margin:0 0 3px 0;
+    display:block;
+    border:0;
+    padding:0;
+}
+
+fieldset#body {
+    background:#fff;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    padding:5px 6px;
+    margin:0;
+	color:#1B325F;
+}
+
+fieldset#body p {
+	text-align:center;
+}
+
+.loginForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+.loginForm  input.login_type {
+    width:auto;
+    margin:5px 5px 0 5px;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#body label {
+    color:#3a454d;
+    /*margin:2px 0 0 0;*/
+    display:block;
+    float:left;
+}
+
+.loginForm #body fieldset label {
+    display:block;
+    float:none;
+    /*margin:0 0 3px 0;*/
+}
+
+/* Default Input */
+.loginForm input.textbox {
+    width:92%;
+    border:1px solid #899caa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    color:#3a454d;
+    font-weight:bold;
+    padding:5px 5px;
+    box-shadow:inset 0px 1px 3px #bbb;
+    -webkit-box-shadow:inset 0px 1px 3px #bbb;
+    -moz-box-shadow:inset 0px 1px 3px #bbb;
+    font-size:11px;
+}
+
+/* Forgot your password */
+.loginForm span {
+    text-align:center;
+    display:block;
+    padding:7px 0 4px 0;
+}
+
+.loginForm span a {
+    font-size:11px;
+	color:#1B325F;
+}
+
+.loginForm span a:hover {
+	text-decoration:underline;
+}
+
+input:focus {
+    outline:none;
+}
+
+ 
+ul#socialmedia {
+	list-style:none;
+	float:right;
+	margin:10px 3px;
+}
+
+ul#socialmedia li {
+	float:left;
+	margin:0 8px 8px 0;
+	list-style:none;
+}
+
+ul#socialmedia li  a{	 
+	display:block;
+	width:32px;
+	height:32px;
+	text-indent:-9999px;
+}
+	
+ul#socialmedia li a.twitter {
+	background: url(../img/social-icons/twitter_32.png);
+}
+
+ul#socialmedia li a.facebook {
+	background: url(../img/social-icons/facebook_32.png);
+}
+
+ul#socialmedia li a.rss {
+	background: url(../img/social-icons/rss_32.png);
+}
+
+ul#socialmedia li a.mail {
+	background: url(../img/social-icons/mail_32.png);
+}
+
+ul#socialmedia li a.googleplus {
+	background: url(../img/social-icons/googleplus_32.png);
+}
+
+
+
+
+
+
+
+
+
+
+#brokers_wrap img {
+	max-width:100%;
+}
+
+
+div#compare_tray {
+	position:fixed;
+	bottom:0;
+	margin:0 auto;
+	text-align:center;
+	height:22px;
+
+}
+#compare_tray  p {
+	margin:0;
+	padding:0;
+	text-align:center;
+	
+}
+#compare_tray  p span.h4 {
+	font-size: 15px;
+	font-weight: bold;
+	/*margin-bottom: 5px;
+	padding:0 10px;*/
+}
+	
+
+div#compare_tray img {
+	max-width:100%;
+}
+
+select {
+	width:auto;
+	}
+	
+.popover-content img {
+	max-width:100%;
+	}
+
+#divVSep {
+	/*border-right:1px dashed #ccc;*/
+}
+
+/* Overriding input, textarea and select styles for auto width */
+input, textarea, select {
+	width:auto;
+	}
